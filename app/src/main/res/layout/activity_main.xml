@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#efd6d6">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coffee Shop"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Name"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#a75050"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:background="#e2dcdc"
+        android:layout_marginTop="70dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coffee_type"
+        android:text="Coffee Type"
+        android:textSize="25dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#a75050"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="130dp"
+        android:id="@+id/type_of_coffee"
+        android:background="#e2dcdc">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Café Latte"
+            android:textSize="20dp"
+            android:textColor="#a75050"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cappuccino"
+            android:textSize="20dp"
+            android:textColor="#a75050"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso"
+            android:textSize="20dp"
+            android:textColor="#a75050"/>
+
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type_of_coffee"
+            android:text="Quantity"
+            android:textSize="25dp"
+            android:id="@+id/qty"
+            android:textColor="#a75050"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/quantity"
+
+            android:layout_below="@id/qty"
+            android:background="#e2dcdc">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250ml"
+                android:textSize="20dp"
+                android:textColor="#a75050"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#a75050"
+                android:text="500ml" />
+
+        </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:textSize="25dp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        android:id="@+id/display"
+        android:layout_marginTop="300dp"
+        android:background="#f7f4f4"
+        android:textColor="#000"/>
+
+
+
+
+
+</RelativeLayout>
